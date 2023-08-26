@@ -170,6 +170,7 @@ body{
 }
 
 /* about us section starts here  */
+/* test */
 
 .about-us-container{
   width: 100%;
@@ -181,5 +182,5 @@ body{
   height: 380px;
   background-color: aqua;
   margin-top: 130px;
-  /* padding: 50px; */
+  padding: 50px;
 }
