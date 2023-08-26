@@ -1,0 +1,185 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling starts here */
+
+.nav-link a{
+  text-decoration: none;
+}
+
+.navbar{
+  border-bottom: 0.5px solid rgb(211, 0, 0);
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 200;
+}
+
+ .nav-link {
+  color: white !important;  
+  transition: color 0.15s;
+  position: relative;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  height: 2px;
+  width: 0;
+  background: red;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before{
+  width: 80%;
+}
+
+ .nav-link:hover {
+  color: red !important;
+}
+
+
+body{
+  background-color: rgb(26, 26, 26);
+  overflow-x: hidden;
+  padding-top: 78px;
+  
+}
+
+
+.nav-item{
+  padding-left: 30px;
+  font-weight: 550;
+}
+
+.dropdown-menu{
+  background-color: black;
+}
+
+.dropdown-menu a{
+  color: white;
+}
+
+.search-icon{
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+
+.form-control{
+  text-indent: 30px;
+  border: none;
+}
+
+/* Navbar Styling ends here */
+
+/* home-part1 starts here */
+
+.hero-section{
+  margin-left: 0;
+  color: white;
+  
+}
+
+.img-home{
+  object-fit: cover;
+}
+
+.content-home2{
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+
+.home-heading{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  /* font-size: 4 rem; */
+}
+
+.para-home{
+  font-size: 30px;
+  color: rgb(207, 207, 207);
+}
+
+.para-home span{
+  font-weight: 800;
+  color: red;
+}
+
+.btn-home button{
+  background-color: red;
+  color: white;
+}
+
+
+/* home-part1 ends here */
+
+.product-category{
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.heading-product{
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.heading-product span{
+  color: rgb(223, 223, 223);
+  font-weight: 800;
+}
+
+.img-card-1{
+  object-fit: cover;
+  height: 354px;
+}
+
+.carousel-control-prev-icon {
+  margin-right: 100px;
+}
+
+.carousel-control-next-icon{
+  margin-left: 100px;
+}
+
+/* about us section starts here  */
+
+.about-us-container{
+  width: 100%;
+  height: 80vh;
+}
+
+.about-us{
+  width: 100%;
+  height: 380px;
+  background-color: aqua;
+  margin-top: 130px;
+  /* padding: 50px; */
+}
