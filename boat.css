@@ -170,17 +170,57 @@ body{
 }
 
 /* about us section starts here  */
-/* test */
+
 
 .about-us-container{
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .about-us{
   width: 100%;
-  height: 380px;
-  background-color: aqua;
+  /* background-color: rgb(39, 39, 39); */
   margin-top: 130px;
-  padding: 50px;
+  height: 85%;
 }
+
+.content-about{
+  background-color: rgb(39, 39, 39);
+  color: rgb(199, 199, 199);
+  padding: 15px;  
+}
+
+.heading-about{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.link-about{
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid red;
+  color: red;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 22px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.link-about:hover{
+  background-color: red;
+  color: white;
+}
+
+.about-img{
+  object-fit: contain;  
+  margin-left: 120px;
+}
+
+/* @media (min-width:992px){
+  #about-img{
+    display: block;
+    width: 400px;
+  }
+} */
