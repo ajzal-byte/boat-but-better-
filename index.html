@@ -1,628 +1,617 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>boAt</title>
-      <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <link rel="stylesheet" href="boat.css">
-    </head>
-    <body >      
-      <!-- NavBar Starts here -->
-    <header>
-      <nav class="navbar navbar-dark navbar-expand-lg py-3">
-        <a class="navbar-brand" href="#">
-          <img src="images/boat-logo.webp" alt="boat-logo" width="85" height="35" style="display: inline-block;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-md-flex justify-content-md-between" id="navbarNav">
-          <ul class="navbar-nav ">
-            <li class="nav-item ">
-              <a class="nav-link  active"  aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categories
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">True Wireless Earbuds</a></li>
-                <li><a class="dropdown-item" href="#">Wirless Neckbands</a></li>
-                <li><a class="dropdown-item" href="#">Wireless Headphones</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Speakers</a></li>
-              </ul>
-            </li>
+<!DOCTYPE html>
+<html lang="en">
 
-            <li class="nav-item ">
-              <a class="nav-link" href="https://www.boat-lifestyle.com/collections/daily-deals" target="_blank">Daily Deals</a>
-            </li>
-          
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                More
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Do What Floats Your boAt</a></li>
-                <li><a class="dropdown-item" href="#">Blogs</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Careers</a></li>
-                <li><a class="dropdown-item" href="#">Store Locator</a></li>
-              </ul>
-            </li>
-            
-          </ul>
-          <form class="d-flex search-bar">
-              
-            <input class="form-control text-white bg-dark position-relative rounded-pill ms-2" type="search" placeholder="Search" aria-label="Search">
-            <i class="fa-solid fa-magnifying-glass position-absolute search-icon ms-3" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-user icon px-3" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-bag-shopping icon px-3" style="color: #ffffff;"></i>
-          </form>
-        </div>              
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boAt</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="boat.css" />
+</head>
+
+<body>
+  <!-- NavBar Starts here -->
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg py-3">
+      <a class="navbar-brand" href="#">
+        <img src="images/boat-logo.webp" alt="boat-logo" width="85" height="35" style="display: inline-block" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-md-flex justify-content-md-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">True Wireless Earbuds</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Wirless Neckbands</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Wireless Headphones</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Speakers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.boat-lifestyle.com/collections/daily-deals" target="_blank">Daily
+              Deals</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Do What Floats Your boAt</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Blogs</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Careers</a></li>
+              <li><a class="dropdown-item" href="#">Store Locator</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex search-bar">
+          <input class="form-control text-white bg-dark position-relative rounded-pill ms-2" type="search"
+            placeholder="Search" aria-label="Search" />
+          <i class="fa-solid fa-magnifying-glass position-absolute search-icon ms-3" style="color: #ffffff"></i>
+          <i class="fa-solid fa-user icon px-3" style="color: #ffffff"></i>
+          <i class="fa-solid fa-bag-shopping icon px-3" style="color: #ffffff"></i>
+        </form>
+      </div>
     </nav>
-    </header>
-      
-      <!-- NavBar ends here!! -->
+  </header>
 
-      <!--  Home-part1 starts here   -->
-      
-          <div class="container hero-section ">
-              <div class="row">
-                  <div class="row content-home2">
-                      <div class="col-lg-7 col-md-5">
+  <!-- NavBar ends here!! -->
 
+  <!--  Home-part1 starts here   -->
 
-                        <div class="box-container">
-                          <img src="images/headphones.png" class="img-fluid" alt="boat-headphones">             
-                        </div>           
-                      </div>
-
-                        <div class="col-lg-5 col-md-7">
-                          <div class="box-container2 position-relative">
-                            <h1 class="home-heading">Headphones</h1>
-                                <div class="heading-content position-relative ">
-                                  <p class="para-home">
-                                    Starting from <span>₹1199*</span>
-                                  </p>
-                                    <div class="btn-home ">
-                                      <button type="button" class="btn">
-                                        Shop Products 
-                                        <i class="fa-solid fa-circle-arrow-right" style="color: #ffffff;"></i>
-                                      </button>
-                                    </div>
-                                </div>
-                          </div>   
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-
-            <!--  Home-part1 ends here   -->
-
-            <!-- Product Category part1 starts here -->
-
-        <section class="product-category">
-          <h2 class="heading-product">Best <span>Sellers</span></h2>
-          <div class="container-fluid ">
-
-            <!-- carousel-bootstrap -->
-
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                
-                
-                <div class="carousel-item active">   
-                  <div class="container">
-                    <div class="row">
-
-
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card text-white bg-dark mb-3">
-                          <img src="images/headphone-1.jpg" class="card-img-top img-card-1" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Rockerz 400</h5>
-                            <p class="card-text">Wireless Bluetooth Headphone with 40mm Dyanmic Drivers, 8 Hours Non-Stop Playback, Lightweight & Portable.</p>
-                            <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="card text-white bg-dark mb-3">
-                          <img src="images/headphone-2.webp" class="card-img-top img-card-1" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Rockerz 450 Batman DC Edition</h5>
-                            <p class="card-text">Bluetooth Wireless Headphone with 40 mm Drivers HD Immersive Audio, Power Up For 15HRS.</p>
-                            <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="card text-white bg-dark mb-3">
-                          <img src="images/headphone-3.webp" class="card-img-top img-card-1" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Immortal 1300</h5>
-                            <p class="card-text">When you put your heart and soul into gaming, make sure your headphones do it too.</p>
-                            <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                    </div>
-                  </div> 
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-
-
-
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="card text-white bg-dark mb-3">
-                          <img src="images/headphone-4.webp" class="card-img-top img-card-1" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Nirvana 751 ANC</h5>
-                            <p class="card-text">Netflix Stream Edition Premium Headphone For Movies & TV Shows, 40mm Driver, 65H Playback.</p>
-                            <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="card text-white bg-dark mb-3">
-                          <img src="images/headphone-5.gif" class="card-img-top img-card-1" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Immortal 400</h5>
-                            <p class="card-text">Change the way you game with Immortal 400 — our all-new Gaming Headphones.</p>
-                            <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="card text-white bg-dark mb-3">
-                          <img src="images/headphone-6.webp" class="card-img-top img-card-1" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Rockerz 550 FM</h5>
-                            <p class="card-text">Wireless Headphone with 50mm dynamic drivers, Bluetooth v5.0, 500mAh battery, 20H Playback.</p>
-                            <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                  
-                  
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
-
+  <div class="container hero-section">
+    <div class="row">
+      <div class="row content-home2">
+        <div class="col-lg-7 col-md-5">
+          <div class="box-container">
+            <img src="images/headphones.png" class="img-fluid" alt="boat-headphones" />
           </div>
-        </section>
+        </div>
 
-
-        <!-- Product Category part1 ends here -->
-
-
-        <!--  Home-part2 starts here   -->
-
-          <div class="container hero-section "> 
-          <div class="row">
-              <div class="row content-home2">
-                  <div class="col-lg-7 col-md-5">
-
-
-                    <div class="box-container">
-                      <img src="images/tws.webp" class="img-fluid" alt="boat-earbuds">             
-                    </div>           
-                  </div>
-
-                    <div class="col-lg-5 col-md-7">
-                      <div class="box-container2 position-relative">
-                        <h1 class="home-heading"> <span>True Wireless</span> Earbuds</h1>
-                            <div class="heading-content position-relative ">
-                              <p class="para-home">
-                                Starting from <span>₹999*</span>
-                              </p>
-                                <div class="btn-home ">
-                                  <button type="button" class="btn">
-                                    Shop Products 
-                                    <i class="fa-solid fa-circle-arrow-right" style="color: #ffffff;"></i>
-                                  </button>
-                                </div>
-                            </div>
-                      </div>   
-                    </div>
-                </div>
-            </div>
-          </div> 
-
-
-          <!--  Home-part2 ends here   -->
-
-          <!-- Product Category part2 starts here -->
-
-
-
-          <section class="product-category">
-            <h2 class="heading-product">Best <span>Sellers</span></h2>
-            <div class="container-fluid">
-    
-              <!-- carousel-bootstrap -->
-    
-              <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  
-                  
-                  <div class="carousel-item active">   
-                    <div class="container">
-                      <div class="row">
-    
-    
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                          <div class="card text-white bg-dark mb-3">
-                            <img src="images/earbuds-1.webp" class="card-img-top img-card-1" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Airdopes 115</h5>
-                              <p class="card-text">Earbuds with 13mm Audio drivers, BEAST™ Mode for Gamers, ENx™ Technology.</p>
-                              <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                            </div>
-                          </div>
-                        </div>
-    
-    
-    
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                          <div class="card text-white bg-dark mb-3">
-                            <img src="images/earbuds-2.gif" class="card-img-top img-card-1" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Immortal 121</h5>
-                              <p class="card-text">Bluetooth Gaming Wireless Earbuds with BEAST™️ Mode, 40 Hours Playback, & Blazing RGB Lights.</p>
-                              <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                            </div>
-                          </div>
-                        </div>
-    
-    
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                          <div class="card text-white bg-dark mb-3">
-                            <img src="images/earbuds-3.webp" class="card-img-top img-card-1" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Airdopes 131 Black Panther </h5>
-                              <p class="card-text">Wireless Earbuds with 13mm Audio Drivers, IWP Technology with Bluetooth v5.0, Upto 15H Playback.</p>
-                              <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                            </div>
-                          </div>
-                        </div>
-    
-    
-    
-                      </div>
-                    </div> 
-                  </div>
-    
-    
-    
-    
-                  <div class="carousel-item">
-                    <div class="container">
-                      <div class="row">
-    
-    
-    
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                          <div class="card text-white bg-dark mb-3">
-                            <img src="images/earbuds-4.webp" class="card-img-top img-card-1" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Airdopes 408</h5>
-                              <p class="card-text">Wireless Earbuds with 10mm drivers, IWP™️ Technology, ENx™️ Technology, Playback Upto 30 Hours.</p>
-                              <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                            </div>
-                          </div>
-                        </div>
-    
-    
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                          <div class="card text-white bg-dark mb-3">
-                            <img src="images/earbuds-5.webp" class="card-img-top img-card-1" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Airdopes 192</h5>
-                              <p class="card-text">Gaming Earbuds with 13mm Drivers, BEAST™ Mode, ENx™ Technology, LED lights, 30 hours of nonstop playback.</p>
-                              <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                            </div>
-                          </div>
-                        </div>
-    
-    
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                          <div class="card text-white bg-dark mb-3">
-                            <img src="images/earbuds-6.webp" class="card-img-top img-card-1" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Airdopes 441 KKR Edition</h5>
-                              <p class="card-text">Wireless Earbuds with 6mm Drivers & boAt Signature Sound, 20H Playback, IPX7 Water Resistance.</p>
-                              <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                            </div>
-                          </div>
-                        </div>
-    
-    
-    
-                    
-                    
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+        <div class="col-lg-5 col-md-7">
+          <div class="box-container2 position-relative">
+            <h1 class="home-heading">Headphones</h1>
+            <div class="heading-content position-relative">
+              <p class="para-home">Starting from <span>₹1199*</span></p>
+              <div class="btn-home">
+                <button type="button" class="btn">
+                  Shop Products
+                  <i class="fa-solid fa-circle-arrow-right" style="color: #ffffff"></i>
                 </button>
               </div>
-    
-    
             </div>
-          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Product Category part2 ends here -->
+  <!--  Home-part1 ends here   -->
 
-          <!--  Home-part3 starts here   -->
+  <!-- Product Category part1 starts here -->
 
+  <section class="product-category">
+    <h2 class="heading-product">Best <span>Sellers</span></h2>
+    <div class="container-fluid">
+      <!-- carousel-bootstrap -->
 
-          <div class="container hero-section "> 
-            <div class="row">
-                <div class="row content-home2">
-                    <div class="col-lg-7 col-md-5">
-  
-  
-                      <div class="box-container">
-                        <img src="images/smartwatches.webp" class="img-fluid" alt="boat-smartwatches">             
-                      </div>           
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/headphone-1.jpg" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Rockerz 400</h5>
+                      <p class="card-text">
+                        Wireless Bluetooth Headphone with 40mm Dyanmic
+                        Drivers, 8 Hours Non-Stop Playback, Lightweight &
+                        Portable.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
                     </div>
-  
-                      <div class="col-lg-5 col-md-7">
-                        <div class="box-container2 position-relative">
-                          <h1 class="home-heading"> <span>Smart</span>Watches</h1>
-                              <div class="heading-content position-relative ">
-                                <p class="para-home">
-                                  Starting from <span>₹1699*</span>
-                                </p>
-                                  <div class="btn-home ">
-                                    <button type="button" class="btn">
-                                      Shop Products 
-                                      <i class="fa-solid fa-circle-arrow-right" style="color: #ffffff;"></i>
-                                    </button>
-                                  </div>
-                              </div>
-                        </div>   
-                      </div>
                   </div>
-              </div>
-            </div> 
-
-
-            <!--  Home-part3 ends here   -->
-
-             <!-- Product Category part3 starts here -->
-
-
-             <section class="product-category">
-              <h2 class="heading-product">Best <span>Sellers</span></h2>
-              <div class="container-fluid">
-      
-                <!-- carousel-bootstrap -->
-      
-                <div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    
-                    
-                    <div class="carousel-item active">   
-                      <div class="container">
-                        <div class="row">
-      
-      
-                          <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card text-white bg-dark mb-3">
-                              <img src="images/smartwatch-1.webp" class="card-img-top img-card-1" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Ultima Chronos</h5>
-                                <p class="card-text">Smartwatch with 1.96" AMOLED Display, BT Calling, Crest OS+, 100+ Watch Faces.</p>
-                                <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                              </div>
-                            </div>
-                          </div>
-      
-      
-      
-                          <div class="col-lg-4 col-md-6 col-sm-12">
-      
-                            <div class="card text-white bg-dark mb-3">
-                              <img src="images/smartwatch-2.webp" class="card-img-top img-card-1" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Wave Active</h5>
-                                <p class="card-text">Smart Watch with 1.96" (4.97 cm) HD Display, 700+ Active Modes, Crest App Health Ecosystem.</p>
-                                <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                              </div>
-                            </div>
-                          </div>
-      
-      
-                          <div class="col-lg-4 col-md-6 col-sm-12">
-      
-                            <div class="card text-white bg-dark mb-3">
-                              <img src="images/smarwatch-3.webp" class="card-img-top img-card-1" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Lunar Connect Ace </h5>
-                                <p class="card-text">Round AMOLED Display Smartwatch with 1.43" (3.63 cm) Screen, Bluetooth Calling, 100+ Sports Modes.</p>
-                                <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                              </div>
-                            </div>
-                          </div>
-      
-      
-      
-                        </div>
-                      </div> 
-                    </div>
-      
-      
-      
-      
-                    <div class="carousel-item">
-                      <div class="container">
-                        <div class="row">
-      
-      
-      
-                          <div class="col-lg-4 col-md-6 col-sm-12">
-      
-                            <div class="card text-white bg-dark mb-3">
-                              <img src="images/smartwatch-4.webp" class="card-img-top img-card-1" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Lunar Space</h5>
-                                <p class="card-text">Smartwatch with 1.3" (3.3 cm) Round HD Display, BT Calling, 100+ Fitness Modes, Heart Rate, SpO2 Monitoring.</p>
-                                <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                              </div>
-                            </div>
-                          </div>
-      
-      
-                          <div class="col-lg-4 col-md-6 col-sm-12">
-      
-                            <div class="card text-white bg-dark mb-3">
-                              <img src="images/smartwatch-5.webp" class="card-img-top img-card-1" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Wave Armour 2</h5>
-                                <p class="card-text">Smartwatch with Bluetooth Calling, 1.96" HD Display, 100+ Sports Mode, Up to 25 Days Battery.</p>
-                                <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                              </div>
-                            </div>
-                          </div>
-      
-      
-                          <div class="col-lg-4 col-md-6 col-sm-12">
-      
-                            <div class="card text-white bg-dark mb-3">
-                              <img src="images/smartwatch-6.webp" class="card-img-top img-card-1" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Armour</h5>
-                                <p class="card-text">Military Grade Smartwatch with 1.83" HD Display, Bluetooth Calling, Tough & Rugged Display, 100+ Watch Faces.</p>
-                                <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank" class="btn btn-danger ">Add to Cart</a>
-                              </div>
-                            </div>
-                          </div>
-      
-      
-      
-                      
-                      
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
-      
-      
-              </div>
-            </section>
 
-
-            <!-- About Us section starts here -->
-
-            <div class="container ">
-              <div class="about-us-container">
-                <div class="about-us">
-                  <div class="row">
-                    <div class="col-lg-6 col-sm-12">
-                      <div class="content-about">
-                        <h3 class="heading-about">About Us</h3>
-                        <p class="para-about mt-3">
-                          boAt Lifestyle is India's leading audio brand, committed to providing consumers with high-quality, stylish, and affordable audio products. Founded in 2016, boAt has quickly become a household name, with a wide range of products that cater to the needs of every lifestyle.
-                        </p>
-                        <p class="para-about">
-                          At boAt, we are more than just a brand, we are a lifestyle that fuses innovation, style, and technology to empower every individual's journey. Born out of a passion for music and a commitment to delivering uncompromised audio experiences, boAt has become a symbol of self-expression and authenticity. 
-                        </p>
-                        <p class="para-about mb-4">
-                          Our relentless pursuit of excellence is driven by our community of boAtheadz, who inspire us to push boundaries and craft products that resonate with their dynamic lifestyles. Join us as we embark on a sonic adventure, reimagining audio for the modern world.
-                        </p>
-                        <a href="#" class="link-about">Read More</a>
-                      </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/headphone-2.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Rockerz 450 Batman DC Edition
+                      </h5>
+                      <p class="card-text">
+                        Bluetooth Wireless Headphone with 40 mm Drivers HD
+                        Immersive Audio, Power Up For 15HRS.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                      <img src="images/speakers.webp" alt="boat-speakers" class="img-fluid mb-5" width="400px" >
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/headphone-3.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Immortal 1300</h5>
+                      <p class="card-text">
+                        When you put your heart and soul into gaming, make
+                        sure your headphones do it too.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/headphone-4.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Nirvana 751 ANC</h5>
+                      <p class="card-text">
+                        Netflix Stream Edition Premium Headphone For Movies &
+                        TV Shows, 40mm Driver, 65H Playback.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
 
-              <!-- About Us section ends here -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/headphone-5.gif" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Immortal 400</h5>
+                      <p class="card-text">
+                        Change the way you game with Immortal 400 — our
+                        all-new Gaming Headphones.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
 
-              <!-- Subscribe Form section starts here -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/headphone-6.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Rockerz 550 FM</h5>
+                      <p class="card-text">
+                        Wireless Headphone with 50mm dynamic drivers,
+                        Bluetooth v5.0, 500mAh battery, 20H Playback.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
+  <!-- Product Category part1 ends here -->
 
-              <!-- <section class="subscribe-form">
+  <!--  Home-part2 starts here   -->
+
+  <div class="container hero-section">
+    <div class="row">
+      <div class="row content-home2">
+        <div class="col-lg-7 col-md-5">
+          <div class="box-container">
+            <img src="images/tws.webp" class="img-fluid" alt="boat-earbuds" />
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-7">
+          <div class="box-container2 position-relative">
+            <h1 class="home-heading"><span>True Wireless</span> Earbuds</h1>
+            <div class="heading-content position-relative">
+              <p class="para-home">Starting from <span>₹999*</span></p>
+              <div class="btn-home">
+                <button type="button" class="btn">
+                  Shop Products
+                  <i class="fa-solid fa-circle-arrow-right" style="color: #ffffff"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Home-part2 ends here   -->
+
+  <!-- Product Category part2 starts here -->
+
+  <section class="product-category">
+    <h2 class="heading-product">Best <span>Sellers</span></h2>
+    <div class="container-fluid">
+      <!-- carousel-bootstrap -->
+
+      <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/earbuds-1.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Airdopes 115</h5>
+                      <p class="card-text">
+                        Earbuds with 13mm Audio drivers, BEAST™ Mode for
+                        Gamers, ENx™ Technology.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/earbuds-2.gif" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Immortal 121</h5>
+                      <p class="card-text">
+                        Bluetooth Gaming Wireless Earbuds with BEAST™️ Mode,
+                        40 Hours Playback, & Blazing RGB Lights.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/earbuds-3.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Airdopes 131 Black Panther</h5>
+                      <p class="card-text">
+                        Wireless Earbuds with 13mm Audio Drivers, IWP
+                        Technology with Bluetooth v5.0, Upto 15H Playback.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/earbuds-4.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Airdopes 408</h5>
+                      <p class="card-text">
+                        Wireless Earbuds with 10mm drivers, IWP™️ Technology,
+                        ENx™️ Technology, Playback Upto 30 Hours.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/earbuds-5.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Airdopes 192</h5>
+                      <p class="card-text">
+                        Gaming Earbuds with 13mm Drivers, BEAST™ Mode, ENx™
+                        Technology, LED lights, 30 hours of nonstop playback.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/earbuds-6.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Airdopes 441 KKR Edition</h5>
+                      <p class="card-text">
+                        Wireless Earbuds with 6mm Drivers & boAt Signature
+                        Sound, 20H Playback, IPX7 Water Resistance.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Category part2 ends here -->
+
+  <!--  Home-part3 starts here   -->
+
+  <div class="container hero-section">
+    <div class="row">
+      <div class="row content-home2">
+        <div class="col-lg-7 col-md-5">
+          <div class="box-container">
+            <img src="images/smartwatches.webp" class="img-fluid" alt="boat-smartwatches" />
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-7">
+          <div class="box-container2 position-relative">
+            <h1 class="home-heading"><span>Smart</span>Watches</h1>
+            <div class="heading-content position-relative">
+              <p class="para-home">Starting from <span>₹1699*</span></p>
+              <div class="btn-home">
+                <button type="button" class="btn">
+                  Shop Products
+                  <i class="fa-solid fa-circle-arrow-right" style="color: #ffffff"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Home-part3 ends here   -->
+
+  <!-- Product Category part3 starts here -->
+
+  <section class="product-category">
+    <h2 class="heading-product">Best <span>Sellers</span></h2>
+    <div class="container-fluid">
+      <!-- carousel-bootstrap -->
+
+      <div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/smartwatch-1.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Ultima Chronos</h5>
+                      <p class="card-text">
+                        Smartwatch with 1.96" AMOLED Display, BT Calling,
+                        Crest OS+, 100+ Watch Faces.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/smartwatch-2.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Wave Active</h5>
+                      <p class="card-text">
+                        Smart Watch with 1.96" (4.97 cm) HD Display, 700+
+                        Active Modes, Crest App Health Ecosystem.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/smarwatch-3.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Lunar Connect Ace</h5>
+                      <p class="card-text">
+                        Round AMOLED Display Smartwatch with 1.43" (3.63 cm)
+                        Screen, Bluetooth Calling, 100+ Sports Modes.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/smartwatch-4.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Lunar Space</h5>
+                      <p class="card-text">
+                        Smartwatch with 1.3" (3.3 cm) Round HD Display, BT
+                        Calling, 100+ Fitness Modes, Heart Rate, SpO2
+                        Monitoring.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/smartwatch-5.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Wave Armour 2</h5>
+                      <p class="card-text">
+                        Smartwatch with Bluetooth Calling, 1.96" HD Display,
+                        100+ Sports Mode, Up to 25 Days Battery.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card text-white bg-dark mb-3">
+                    <img src="images/smartwatch-6.webp" class="card-img-top img-card-1" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Armour</h5>
+                      <p class="card-text">
+                        Military Grade Smartwatch with 1.83" HD Display,
+                        Bluetooth Calling, Tough & Rugged Display, 100+ Watch
+                        Faces.
+                      </p>
+                      <a href="https://www.boat-lifestyle.com/products/rockerz-400" target="_blank"
+                        class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us section starts here -->
+
+  <div class="container">
+    <div class="about-us-container">
+      <div class="about-us">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="content-about">
+              <h3 class="heading-about">About Us</h3>
+              <p class="para-about mt-3">
+                boAt Lifestyle is India's leading audio brand, committed to
+                providing consumers with high-quality, stylish, and affordable
+                audio products. Founded in 2016, boAt has quickly become a
+                household name, with a wide range of products that cater to
+                the needs of every lifestyle.
+              </p>
+              <p class="para-about">
+                At boAt, we are more than just a brand, we are a lifestyle
+                that fuses innovation, style, and technology to empower every
+                individual's journey. Born out of a passion for music and a
+                commitment to delivering uncompromised audio experiences, boAt
+                has become a symbol of self-expression and authenticity.
+              </p>
+              <p class="para-about mb-4">
+                Our relentless pursuit of excellence is driven by our
+                community of boAtheadz, who inspire us to push boundaries and
+                craft products that resonate with their dynamic lifestyles.
+                Join us as we embark on a sonic adventure, reimagining audio
+                for the modern world.
+              </p>
+              <a href="#" class="link-about">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="images/speakers.webp" alt="boat-speakers" class="img-fluid mb-5" width="400px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us section ends here -->
+
+  <!-- Subscribe Form section starts here -->
+
+  <!-- <section class="subscribe-form">
                 <div class="container-fluid subscribe">
                   <div class="row subscribe-1">
                     <div class="col-lg-4 col-md-12 ">
@@ -639,31 +628,37 @@
                 
               </section> -->
 
-              <!-- Subscribe Form section starts here -->
+  <!-- Subscribe Form section starts here -->
 
-              <!-- Footer Starts here -->
+  <!-- Footer Starts here -->
 
-              <footer class="container-fluid content-footer d-flex flex-column justify-content-center align-items-center">
-                <!-- <div class="container-fluid content-footer d-flex flex-column justify-content-center align-items-center"> -->
-                  <h5 class="social-footer py-4">
-                    Let's get social 
-                    <i class="fa-brands fa-facebook px-3" style="color: #ff0a0a;"></i>
-                    <i class="fa-brands fa-x-twitter px-3" style="color: #ff0000;"></i>
-                    <i class="fa-brands fa-instagram px-3" style="color: #ff0000;"></i>
-                    <i class="fa-brands fa-youtube px-3" style="color: #ff0000;"></i>
-                    <i class="fa-brands fa-linkedin-in px-3" style="color: #ff0000;"></i>
-                  </h5>
-                  <p class="privacy-footer py-3">Privacy Policy  &#183;  Terms & Conditions</p>
-                  <p class="copyright-footer py-2">&#169; 2023 Imagine Marketing Limited. All Rights Reserved.</p>
-                  <p class="contact-footer">
-                    For queries contact us: Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing, <br>
-                    <span class="d-flex justify-content-center align-items-center">Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</span>
-                  </p>
-                <!-- </div> -->
-              </footer>
+  <footer class="container-fluid content-footer d-flex flex-column justify-content-center align-items-center">
+    <h5 class="social-footer py-4">
+      Let's get social
+      <i class="fa-brands fa-facebook px-3" style="color: #ff0a0a"></i>
+      <i class="fa-brands fa-x-twitter px-3" style="color: #ff0000"></i>
+      <i class="fa-brands fa-instagram px-3" style="color: #ff0000"></i>
+      <i class="fa-brands fa-youtube px-3" style="color: #ff0000"></i>
+      <i class="fa-brands fa-linkedin-in px-3" style="color: #ff0000"></i>
+    </h5>
+    <p class="privacy-footer py-3">
+      Privacy Policy &#183; Terms & Conditions
+    </p>
+    <p class="copyright-footer py-2">
+      &#169; 2023 Imagine Marketing Limited. All Rights Reserved.
+    </p>
+    <p class="contact-footer">
+      For queries contact us: Manager, Imagine Marketing Limited Unit no. 204
+      & 205, 2nd floor, D-wing & E-wing, <br />
+      <span class="d-flex justify-content-center align-items-center">Corporate Avenue, Andheri Ghatkopar Link Road,
+        Mumbai,
+        Maharashtra-400093, India</span>
+    </p>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
 
-        
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-      </body>
-      </html>
+</html>
