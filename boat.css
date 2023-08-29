@@ -179,7 +179,6 @@ body{
 
 .about-us{
   width: 100%;
-  /* background-color: rgb(39, 39, 39); */
   margin-top: 130px;
   height: 85%;
 }
@@ -218,9 +217,40 @@ body{
   margin-left: 120px;
 }
 
-/* @media (min-width:992px){
-  #about-img{
-    display: block;
-    width: 400px;
-  }
+
+
+/* about us section ends here  */
+
+
+/* .subscribe-form{
+  overflow-x: hidden;
+}
+
+.subscribe{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.subscribe-1{
+  background-color: antiquewhite;
+  
 } */
+
+footer{
+  background-color: black;
+  /* overflow-y: hidden; */
+  margin: 0px 0px;
+  height: 50vh;
+}
+
+.content-footer{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+
+
+.copyright-footer, .contact-footer{
+  color: rgb(129, 129, 129);
+}
