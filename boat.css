@@ -248,6 +248,10 @@ footer{
 
 }
 
+footer i:hover{
+  cursor: pointer;
+}
+
 .content-footer{
   padding-top: 30px;
   padding-bottom: 10px;
